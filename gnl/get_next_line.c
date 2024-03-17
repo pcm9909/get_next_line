@@ -72,3 +72,5 @@ char	*get_next_line(int fd)
 	free(buf);
 	return (ft_return_line(&str, ret));
 }
+
+
