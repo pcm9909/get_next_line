@@ -6,7 +6,7 @@
 /*   By: chunpark <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/12 21:42:50 by chunpark          #+#    #+#             */
-/*   Updated: 2024/03/20 11:36:22 by chunpark         ###   ########.fr       */
+/*   Updated: 2024/03/20 11:52:45 by chunpark         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,7 @@ char	*ft_return_line(char **str, int ret)
 	return (line);
 }
 
-char	*get_next_line_bonus(int fd)
+char	*get_next_line(int fd)
 {
 	static char	*str[1024];
 	char		*buf;
