@@ -6,7 +6,7 @@
 /*   By: chunpark <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/11 23:41:18 by chunpark          #+#    #+#             */
-/*   Updated: 2024/03/12 16:45:20 by chunpark         ###   ########.fr       */
+/*   Updated: 2024/03/20 11:37:49 by chunpark         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	*handle_newline(char **str, int i)
 	char	*line;
 	char	*tmp;
 
-	line = ft_substr(*str, 0, i);
+	line = ft_substr(*str, 0, i + 1);
 	tmp = ft_strdup(&(*str)[i + 1]);
 	free(*str);
 	*str = tmp;
@@ -72,5 +72,3 @@ char	*get_next_line(int fd)
 	free(buf);
 	return (ft_return_line(&str, ret));
 }
-
-
