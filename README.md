@@ -10,7 +10,7 @@ int main(void)
     int fd;
     char *line;
 
-    fd = open("test.txt", O_RDONLY); // Insert your text file name ended by .txt
+    fd = open("test.txt", O_RDONLY); // Insert your textfile name ended by .txt
     if (fd == -1)
     {
         printf("file open fail");
