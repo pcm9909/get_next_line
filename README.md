@@ -3,7 +3,7 @@ Compile ( Make your own main file )
 cc get_next_line.c get_next_line_utils.c [your main file]
 ```
 
-Example for editing main file
+Example for editing main.c
 ```c
 int main(void)
 {
